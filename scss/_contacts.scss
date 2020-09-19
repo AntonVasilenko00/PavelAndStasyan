@@ -1,0 +1,33 @@
+#contacts {
+	height: 77vh;
+	background-color: $primary-second;
+	color: $secondary;
+	h2 {
+		text-align: center;
+		color: $secondary;
+	}
+	a {
+		@include easeOut;
+		margin: 0 4rem 0 1rem;
+		width: fit-content;
+		padding: 0;
+		color: rgba($secondary, 0.8);
+		&:hover {
+			color: rgba($accent-red, 0.9);
+		}
+	}
+	.container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+.contacts-wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 20vh;
+	width: 30%;
+}
+.links {
+	display: flex;
+	align-items: center;
+}

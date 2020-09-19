@@ -1,0 +1,53 @@
+@import "config";
+@import "header";
+@import "intro";
+@import "about";
+@import "training";
+@import "contacts";
+@import "footer";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $secondary;
+	// overflow: hidden;
+}
+
+html {
+	box-sizing: border-box;
+	width: fit-content;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	@include primary-font;
+	color: $primary-first;
+}
+
+p,
+a {
+	@include secondary-font;
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}

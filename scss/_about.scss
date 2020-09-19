@@ -1,0 +1,23 @@
+.about .container {
+	display: flex;
+	padding-top: calc(#{$header-height} + 1rem);
+	.img-wrapper img {
+		min-height: 15rem;
+		min-width: 10rem;
+		width: 100%;
+		height: auto;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+	.img-wrapper {
+		width: 30%;
+	}
+}
+
+.info {
+	width: 40%;
+	line-height: 2;
+}
+
+.info-wrapper {
+	margin-left: 2rem;
+}

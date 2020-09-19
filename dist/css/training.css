@@ -1,0 +1,7 @@
+.trainings-wrapper {
+  display: flex;
+}
+
+.trainings-wrapper img {
+  width: 5rem;
+}

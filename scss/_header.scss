@@ -1,0 +1,55 @@
+#header {
+	position: fixed;
+	padding: 1rem 2rem;
+	background-color: $primary-second;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: $header-min-height;
+	height: $header-height;
+	width: 100%;
+
+	a {
+		color: $secondary;
+	}
+	margin-bottom: $header-height;
+}
+
+#logo {
+	a {
+		color: $primary-first;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+// Navigation
+.nav-link {
+	@include easeOut;
+	margin-left: 3rem;
+	&:hover {
+		color: $accent-orange !important;
+		text-shadow: 1px 1px 1px $primary-first;
+	}
+}
+//Other
+.and {
+	color: $secondary;
+}
+
+.logo-letters {
+	color: $accent-orange;
+	text-shadow: 1px 1px 1px $secondary;
+	// font-size: ;
+}
+
+@media (max-width: 480px) {
+	#logo a {
+		font-size: 4rem;
+	}
+	.navigation {
+		display: none;
+	}
+} ;

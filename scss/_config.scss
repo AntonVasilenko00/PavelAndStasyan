@@ -1,0 +1,25 @@
+//color scheme
+$primary-first: #011627;
+$primary-second: #2ec4b6;
+$secondary: #fdfffc;
+$accent-red: #e71d36;
+$accent-orange: #ff9f1c;
+
+//Fonts
+@mixin primary-font() {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+
+@mixin secondary-font() {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+//Transition
+@mixin easeOut() {
+	transition: all 0.2s ease-out;
+}
+
+$header-height: 7vh;
+$header-min-height: 100px;
